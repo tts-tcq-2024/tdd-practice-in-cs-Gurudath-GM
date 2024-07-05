@@ -1,0 +1,4 @@
+Given the below inputs, when the add function called, then the below results are expected
+Positive Tests                                              
+Input    Results                    
+""        0                         
