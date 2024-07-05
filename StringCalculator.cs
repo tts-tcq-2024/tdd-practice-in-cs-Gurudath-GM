@@ -1,7 +1,7 @@
 using System;
 
 public class StringCalculator() {
-  public int add(int input) {
-    return -1;
+  public int Add(string input) { 
+    return -1; 
   }
 }
