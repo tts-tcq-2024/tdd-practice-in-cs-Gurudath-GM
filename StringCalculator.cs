@@ -7,7 +7,7 @@ public class StringCalculator
     public int Add(string numbers)
     {
         if (string.IsNullOrEmpty(numbers))
-            if (IsNullOrEmpty(numbers))
+            if (CheckStringValue(numbers))
             {
                 return 0;
             }
@@ -18,7 +18,7 @@ public class StringCalculator
         return SumCalculator(numberList);
     }
 
-    private bool IsNullOrEmpty(string input)
+    private bool CheckStringValue(string input)
     {
         return string.IsNullOrWhiteSpace(input);
     }
