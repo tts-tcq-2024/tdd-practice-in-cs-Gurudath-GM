@@ -1,0 +1,9 @@
+Given the below inputs, when the add function called, then the below results are expected                                              
+Input       Results                    
+""            0    
+"0"           0
+"1,2"         3    
+"-1,2"        Exception "Negatives not allowed”
+"1\n2,3"      6    
+"1,1001"      1
+"//;\n1;2"    3
