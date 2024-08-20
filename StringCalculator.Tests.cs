@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using Xunit;
 
-
 public class StringCalculatorAddTests
 {
     [Fact]
@@ -11,9 +10,8 @@ public class StringCalculatorAddTests
         int expectedResult = 0;
         string input = "";
         StringCalculator objUnderTest = new StringCalculator();
-        int result = objUnderTest.Add(input);
-
-       Assert.Equal(expectedResult, result);
+        int actualResult = objUnderTest.Add(input);
+        Assert.Equal(actualResult, expectedResult);
     }
 
   [Fact]
@@ -22,9 +20,8 @@ public class StringCalculatorAddTests
         int expectedResult = 0;
         string input = "0";
         StringCalculator objUnderTest = new StringCalculator();
-        int result = objUnderTest.Add(input);
-
-        Assert.Equal(expectedResult, result);
+        int actualResult = objUnderTest.Add(input);
+        Assert.Equal(actualResult, expectedResult);
     }
 
   [Fact]
@@ -33,9 +30,8 @@ public class StringCalculatorAddTests
         int expectedResult = 3;
         string input = "1,2";
         StringCalculator objUnderTest = new StringCalculator();
-        int result = objUnderTest.Add(input);
-
-       Assert.Equal(expectedResult, result);
+        int actualResult = objUnderTest.Add(input);
+        Assert.Equal(actualResult, expectedResult);
     }
 
     [Fact]
@@ -55,9 +51,8 @@ public class StringCalculatorAddTests
         int expectedResult = 6;
         string input = "1\n2,3";
         StringCalculator objUnderTest = new StringCalculator();
-        int result = objUnderTest.Add(input);
-
-       Assert.Equal(expectedResult, result);
+        int actualResult = objUnderTest.Add(input);
+        Assert.Equal(actualResult, expectedResult);
     }
 
   [Fact]
@@ -66,9 +61,8 @@ public class StringCalculatorAddTests
         int expectedResult = 1;
         string input = "1,1001";
         StringCalculator objUnderTest = new StringCalculator();
-        int result = objUnderTest.Add(input);
-
-       Assert.Equal(expectedResult, result);
+        int actualResult = objUnderTest.Add(input);
+        Assert.Equal(actualResult, expectedResult);
     }
 
     [Fact]
@@ -77,8 +71,7 @@ public class StringCalculatorAddTests
         int expectedResult = 3;
         string input = "//;\n1;2";
         StringCalculator objUnderTest = new StringCalculator();
-        int result = objUnderTest.Add(input);
-
-       Assert.Equal(expectedResult, result);
+        int actualResult = objUnderTest.Add(input);
+        Assert.Equal(actualResult, expectedResult);
     }
 }
